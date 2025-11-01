@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ADIR Taha</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <header class="nav">
+        <div class="container nav-inner">
+            <div class="brand">ADIR Taha</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">A propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Salut, je suis <span class="accent">ADIR TAHA</span></h1>
+                    <h2>Développeur Full Stack</h2>
+                    <p>Je crée des expériences web modernes, réactives et accessibles.</p>
+                    <a href="#contact" class="btn primary">Me contacter</a>
+                </div>
+                <div class="hero-image">
+                    <!-- image de profil possible -->
+                     <div class="avatar" aria-hidden="true"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h3>A propos de moi</h3>
+            <p>
+                Développeur web passionné par la création d'applications performantes et maintenables. J'aime apprendre de nouvelles technologies et résoudre des problèmes avec du code propre.
+            </p>
+            <a href="#projects" class="btn">Voir mes projets</a>
+        </section>
+
+        <section id="skills" class="skills container">
+            <h3>Mes compétences</h3>
+            <div class="skill-grid">
+                <div class="skill">
+                    <label>HTML5</label>
+                    <div class="bar"><div class="progress" data-value="95"></div></div>
+                </div>
+                <div class="skill">
+                    <label>CSS3</label>
+                    <div class="bar"><div class="progress" data-value="85"></div></div>
+                </div>
+                <div class="skill">
+                    <label>JavaScript</label>
+                    <div class="bar"><div class="progress" data-value="80"></div></div>
+                </div>
+                <div class="skill">
+                    <label>PHP / MySQL</label>
+                    <div class="bar"><div class="progress" data-value="90"></div></div>
+                </div>
+                <div class="skill">
+                    <label>ReactJS</label>
+                    <div class="bar"><div class="progress" data-value="75"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects container">
+            <h3>Projets</h3>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- cartes genrees via JS -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h3>Contact</h3>
+            <form id="contactForm" novalidate>
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="Ton nom" required />
+                </div>
+                <div class="form-row">
+                    <input type="email" id="email" name="email" placeholder="Ton e-mail" required />
+                </div>
+                <div class="form-row">
+                    <textarea name="message" id="message" rows="5" placeholder="Ton message" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn primary">Envoyer</button>
+                    <span id="formMsg" class="form-msg" role="status" aria-live="polite"></span>
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <p><strong>Email: </strong> tahaadir99@gmail.com</p>
+                <p><strong>Localisation: </strong> Casablanca, Maroc</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> ADIR Taha. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
